@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    ;
+}
+
+.tsl-main-container {
+    background-color: blue;
+}
+
+.tsl-main-container .tsl-main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 9rem;
+    background: #fff;
+    border-bottom: 1px solid #dedede;
+    position: fixed;
+    width: 100%;
+    margin: 0 0 4px;
+    padding-top: 10px;
+    top: 0;
+}
+
+.tsl-main-container .tsl-main-header .header-image-container img {
+    max-width: 126px;
+    height: auto;
+}
+
+.main-header-menu-list {
+    /* position: relative; */
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-header-menu-list a {
+    margin: 0 15px;
+    color: #101926;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.main-header-menu-list li a::after {
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid #101926;
+    border-right: 2px solid #101926;
+    content: "";
+    bottom: 0;
+    border-radius: 0.2px;
+    top: 7px;
+    margin-left: 8px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.main-header-menu-list li a:last-child::after {
+    display: none;
+}
+
+.main-header-menu-list li {
+    position: relative;
+    list-style: none;
+}
+
+.main-header-menu-list li:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: -27px;
+    border-bottom: 2px solid #101926;
+}
+
+.cart-login-tata-container {
+    display: flex;
+    width: 13%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-login-tata-container .tata-logo {
+    width: 40px;
+}
+
+.tsl-cart {
+    position: relative;
+}
+
+.tsl-cart img::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    bottom: 0;
+    left: 1px;
+    right: 0;
+    background-color: transparent;
+    width: 38px;
+    height: 24px;
+    border-radius: 0;
+    z-index: 999;
+    border: none;
+    border-right: 1px solid red;
+}
+
+.tsl-login {
+    background-color: #002b45;
+    border: 1px solid #002b45;
+    text-transform: uppercase;
+    font-size: .625rem;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 0;
+    height: 2pc;
+    padding: 7px 15px;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media(max-width: 1024px) {
+    .main-header-menu-list {
+        display: none;
+    }
+
+    .cart-login-tata-container {
+        width: 24%;
+    }
+}
